@@ -1,0 +1,241 @@
+
+@keyframes animateThis {
+    0%{
+        font-size:22px;
+        border-radius:50%;
+    }
+    20%{
+        font-size:42px;
+        color:blue;
+        margin:3em;
+        border-radius:20%;
+    }
+    40%{
+        font-size:0;
+        font-family:cursive;
+        border-radius:30%;
+    }
+    100%{
+        font-size:12px;
+        border-radius:50%;
+    }
+}
+
+
+/* -------------Keyframes */
+
+
+
+
+
+
+@media (max-width: 1380px) {
+  body {
+    background-color: lightgrey; 
+    color: blue;
+  }
+  .superContainer {
+    /* border: solid blue; */
+    height: 1200vh;
+    height: 100%;
+    margin: 3em;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .sideNav {
+    border: solid lime;
+    width: 20%;
+  }
+  .containerPrimary {
+    border: solid orange;
+    width: 50%;
+  }
+  .optionsContainer {
+    border: solid blue;
+    width: 20%;
+  }
+}
+/* ---------------------------------------{ScreenSize: Desktop} */
+
+@media (max-width: 880px) {
+  body {
+    background-color: lightskyblue;
+    color: black;
+  }
+  .superContainer {
+    /* border: solid white; */
+    height: 1200vh;
+    margin: 1em;
+    display: flex;
+  }
+  .sideNav {
+    border: solid lime;
+    width: 30%;
+    display:none;
+  }
+  .containerPrimary {
+    border: solid orange;
+    width: 70%;
+  }
+  .optionsContainer {
+    border: solid blue;
+    width: 30%;
+  }
+}
+/* ---------------------------------------{ScreenSize: Mid} */
+
+@media (max-width: 580px) {
+  body {
+    background-color: black;
+    color: white;
+  }
+  .superContainer {
+    /* border: solid white; */
+    height: 1200vh;
+    margin: auto;
+    display: flex;
+  }
+  .sideNav {
+    border: solid lime;
+    width: 50%;
+    display: none;
+  }
+  .containerPrimary {
+    border: solid orange;
+    width: 100%;
+  }
+  .optionsContainer {
+    border: solid blue;
+    width: 30%;
+    display: none;
+  }
+}
+/* ---------------------------------------{ScreenSize: Mobile} */
+
+
+
+/* -----------------Unchanging CSS {GENERAL}--------------------- */
+
+/* body:hover{
+    transition-delay: 10s;
+    background-color: red;
+} */
+
+.transitionContainer{
+    border:solid red;
+    height:90px;
+    width:90px;
+    margin:3em;
+
+} 
+.transitionContainer:hover{
+    border:solid red;
+    background-color:blue;
+    border-width:9px;
+    height:200px;
+    width:100%; 
+    font-family:cursive;
+    transform:rotate(180deg);
+    background-image: url('https://plus.unsplash.com/premium_photo-1663933533712-eef7095f782b?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwyfHx8ZW58MHx8fHx8');
+    /*
+    background-image: "../Seal_of_the_United_States_Securities_and_Exchange_Commission.svg.png";
+    */
+    width:50%;
+    background-size: contain;
+} 
+
+.nyc{
+    border:solid orange;
+    background-color:blue;
+    height:auto;
+    /* animation: animateThis 4s ease-in-out infinite; */
+    
+}
+
+.splashImg{
+    border:solid purple;
+    background-color:purple;
+    width:100%;
+    height:32vh;
+    background-image: url('');
+}
+
+.person{
+    border:solid black;
+    background-image: url('https://www.cousinsmainelobster.com/static/8a1e02a9ca2d8d6edb935e8b938d8f94/d2945/fisherman.webp');
+    height:42vh;
+    width:50%;
+}
+.person:hover{
+    background-image: url('https://www.cousinsmainelobster.com/static/8a1e02a9ca2d8d6edb935e8b938d8f94/a27e8/fisherman.webp');
+    transition:4s;
+    width:100%;
+    height:55vh;
+}
+/* p:hover{
+    font-size:42px;
+    color:blue;
+    transition:13s;
+} */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+}
+
+a {
+    display: inline-block;
+    margin: 10px 0;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+a:hover {
+    background-color: #0056b3;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+  
+  /* Create four equal columns that sits next to each other */
+  .column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+  }
+  
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+  }
+  
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 800px) {
+    .column {
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
+  .shrink {
+    width:100%;
+  }
+ <label>
+   <input type="text">
+ </label>
+<label for="fullName">Full Name</label>
+<input id="fullName" type="text" name="name">
+
+  </style>

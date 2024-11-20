@@ -24,11 +24,6 @@
 
 /* -------------Keyframes */
 
-
-
-
-
-
 @media (max-width: 1380px) {
   body {
     background-color: lightgrey; 
@@ -36,8 +31,7 @@
   }
   .superContainer {
     /* border: solid blue; */
-    height: 1200vh;
-    height: 100%;
+    height: auto;
     margin: 3em;
     display: flex;
     justify-content: space-evenly;
@@ -59,7 +53,7 @@
 
 @media (max-width: 880px) {
   body {
-    background-color: lightskyblue;
+    background-color: #709775; /* Roughly the color of US currency, at least for now */
     color: black;
   }
   .superContainer {
@@ -111,8 +105,7 @@
   }
 }
 /* ---------------------------------------{ScreenSize: Mobile} */
-
-
+*/
 
 /* -----------------Unchanging CSS {GENERAL}--------------------- */
 
@@ -136,10 +129,7 @@
     width:100%; 
     font-family:cursive;
     transform:rotate(180deg);
-    background-image: url('https://plus.unsplash.com/premium_photo-1663933533712-eef7095f782b?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwyfHx8ZW58MHx8fHx8');
-    /*
-    background-image: "../Seal_of_the_United_States_Securities_and_Exchange_Commission.svg.png";
-    */
+    background-image: url("Seal_of_the_United_States_Securities_and_Exchange_Commission.svg.png");
     width:50%;
     background-size: contain;
 } 
@@ -160,6 +150,7 @@
     background-image: url('');
 }
 
+/* p:hover{
 .person{
     border:solid black;
     background-image: url('https://www.cousinsmainelobster.com/static/8a1e02a9ca2d8d6edb935e8b938d8f94/d2945/fisherman.webp');
@@ -172,7 +163,6 @@
     width:100%;
     height:55vh;
 }
-/* p:hover{
     font-size:42px;
     color:blue;
     transition:13s;
@@ -216,7 +206,7 @@ a:hover {
   
   /* Responsive layout - makes a two column-layout instead of four columns */
   @media screen and (max-width: 800px) {
-    .column {
+    column {
       flex: 50%;
       max-width: 50%;
     }

@@ -263,3 +263,9 @@ form input.button {
   z-index:2;
   flex: contain;
 }
+button[type="submit"] {
+	background-color: #A1D9DD !important;
+}
+button[type="submit"]:hover {
+	background-color: #EDD17D !important;
+}

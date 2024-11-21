@@ -236,6 +236,30 @@ form input.button {
   color: #fff;
 }
 #section1 {
-
   .background-color: blue;
+}
+.title {
+  color:#111D13;
+  padding:0px;
+  margin:0px;
+}
+.outlink {
+  padding:0px;
+  background-color: #A1CCA5; 
+  color:#111D13;
+  border-radius:0px;
+}
+.outlink:hover {
+  background-color: #415D43
+}
+.forms {
+  color: #415D43;
+  margin: auto;
+  z-index:2;
+}
+.formbox {
+  color: #415D43;
+  margin: auto;
+  z-index:2;
+  flex: contain;
 }

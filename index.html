@@ -1,164 +1,75 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title></title>
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="style.css" />
-  </head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            scroll-behavior: smooth;
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            z-index: 1000;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .iframe-section {
+            background-color:#111D13;
+            margin-top: 0px; /* Offset for fixed header */
+            padding: 20px #111D13;
+        }
+
+        iframe {
+            width: 100%;
+            height: 100vh; /* Full viewport height */
+            border: none;
+        }
+    </style>
+</head>
 <body>
-
-<div class="tradingview-widget-container">
-  <div class="tradingview-widget-container__widget"></div>
-  <!--
-  <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/" rel="noopener nofollow" target="_blank"><span class="blue-text">Track all markets on TradingView</span></a></div>
--->
-  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
-  {
-  "symbols" [
-    {
-      "proName": "FOREXCOM:SPXUSD",
-      "title": "S&P 500 Index"
-    },
-    {
-      "proName": "FOREXCOM:NSXUSD",
-      "title": "US 100 Cash CFD"
-    },
-    {
-      "proName": "FX_IDC:EURUSD",
-      "title": "EUR to USD"
-    },
-    {
-      "proName": "BITSTAMP:BTCUSD",
-      "title": "Bitcoin"
-    },
-    {
-      "proName": "BITSTAMP:ETHUSD",
-      "title": "Ethereum"
-    }
-  ],
-  "showSymbolLogo": true
-  "isTransparent": false
-  "displayMode": "adaptive"
-  "colorTheme": "light"
-  "locale": "en"
-}
-  </script>
-</div>
-<!-- TradingView Widget END -->
-
-
+<!--
     <header>
         <nav>
-            <a href="#section1">Section 1</a>
-            <a href="#section2">Section 2</a>
-            <a href="#section3">Section 3</a>
+            <a href="#section1">Page 1</a>
+            <a href="#section2">Page 2</a>
+            <a href="#section3">Page 3</a>
         </nav>
     </header>
+-->
 
-    <section>Section1
-    <div class="superContainer">
-	<div class="row"> 
-	  <div class="column">
-	    <img src="giorgio-trovato-WyxqQpyFNk8-unsplash.jpg" style="width:100%">
-	    <img src="gabriel-meinert-Y3B4TpqM06Q-unsplash.jpg" style="width:100%">
-	    <img src="emilio-takas-_GNVwZJv-Jo-unsplash.jpg" style="width:100%">
-	  </div>
-	  <div class="column">
-	    <img src="sec-logo-white-2x.png" style="width:100%">
-	    <img src="Theranos_Logo.svg.png" style="width:100%">
-	    <img src="Seal_of_the_United_States_Securities_and_Exchange_Commission.svg.png" style="width:100%">
-	  </div> 
-   
-	  <div class="column">
-	    <img src="giorgio-trovato-WyxqQpyFNk8-unsplash.jpg" style="width:100%">
-	    <img src="gabriel-meinert-Y3B4TpqM06Q-unsplash.jpg" style="width:100%">
-	    <img src="emilio-takas-_GNVwZJv-Jo-unsplash.jpg" style="width:100%">
-	  </div>
-  
-	  <!-- 
-	   <div class="column">
-	     <img src="sec-logo-white-2x.png" style="width:100%">
-	     <img src="Theranos_Logo.svg.png" style="width:100%">
-	     <img src="Seal_of_the_United_States_Securities_and_Exchange_Commission.svg.png" style="width:100%">
-	   </div>
-	 -->
-	 </div>
-         <div class="sideNav"></div>
+    <div class="iframe-section" id="section1">
+<!--        <h2>Page 1</h2> -->
+        <iframe src="index_one.html"></iframe>
+    </div>
 
-  	   <!-- 
-	      <div class="containerPrimary">
-	        <img src="" alt="" class="splashImg">
-	        <div class="person">
-	      </div>
-	    -->
-         </div>
-       </div>
-       </section>
+    <div class="iframe-section" id="section2">
+<!--        <h2>Page 2</h2> -->
+        <iframe src="index_two.html"></iframe>
+    </div>
 
-       <section>Section2
-       <form action="#">
-       		<label for="userName">User Name
-              <input type="text" name="userName" id="UserName" required />
-            </label>
-         
-         <br>
-            <label for="password">Password
-              <input type="password" name="password" id="password" />
-            </label>
-         </form> 
-    </section>
-
-    <section>Section3
-      <table><caption>Phone numbers</caption>
-      <thead>
-        <tr>
-       <th>Name</th>
-       <th colspan="2">Phone</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-       <td>John</td>
-       <td>577854</td>
-       <td>577855</td>
-        </tr>
-        <tr>
-       <td>Jack</td>
-       <td>577856</td>
-       <td>577857</td>
-        </tr>
-      </tbody>
-      <tfoot>
-        <tr>
-       <td>&nbsp;</td>
-       <td>Personal</td>
-       <td>Office</td>
-        </tr>
-      </tfoot>
-     </table>
-    </section>
-<form action="#">
-  <label>Choose a car:</label>
-  <select name="cars">
-    <option value="volvo">Volvo</option>
-    <option value="saab">Saab</option>
-    <option value="fiat">Fiat</option>
-    <option value="audi" selected>Audi</option>
-  </select>
-
-  <input type="submit">
-</form>
-
+    <div class="iframe-section" id="section3">
+<!--        <h2>Page 3</h2> -->
+        <iframe src="index_three.html"></iframe>
+    </div>
 </body>
-</html>
-
-</body>
-</html>
-
-
-    <script src="app.js" async defer></script>
-  </body>
 </html>

@@ -26,18 +26,19 @@
 
 @media (max-width: 1380px) {
   body {
-    background-color: lightgrey; 
+    background-color: #709775; /* Roughly the color of US currency, at least for now */
     color: blue;
   }
   .superContainer {
-    /* border: solid blue; */
+    border: solid #415D43;
+    background-color:#A1CCA5;
     height: auto;
     margin: 3em;
     display: flex;
     justify-content: space-evenly;
   }
   .sideNav {
-    border: solid lime;
+    border: solid #111D13;
     width: 20%;
   }
   .containerPrimary {
@@ -58,12 +59,12 @@
   }
   .superContainer {
     /* border: solid white; */
-    height: 1200vh;
+    height: auto;
     margin: 1em;
     display: flex;
   }
   .sideNav {
-    border: solid lime;
+    border: solid #111D13;
     width: 30%;
     display:none;
   }
@@ -80,17 +81,17 @@
 
 @media (max-width: 580px) {
   body {
-    background-color: black;
+    background-color: #709775; /* Roughly the color of US currency, at least for now */
     color: white;
   }
   .superContainer {
     /* border: solid white; */
-    height: 1200vh;
+    height: auto;
     margin: auto;
     display: flex;
   }
   .sideNav {
-    border: solid lime;
+    border: solid #111D13;
     width: 50%;
     display: none;
   }
@@ -168,6 +169,7 @@
     transition:13s;
 } */
 body {
+    background-color: #709775; /* Roughly the color of US currency, at least for now */
     font-family: Arial, sans-serif;
     text-align: center;
     padding: 20px;
@@ -202,6 +204,7 @@ a:hover {
   .column img {
     margin-top: 8px;
     vertical-align: middle;
+    border: 2px solid #111D13;
   }
   
   /* Responsive layout - makes a two column-layout instead of four columns */
@@ -219,13 +222,20 @@ a:hover {
       max-width: 100%;
     }
   }
-  .shrink {
-    width:100%;
-  }
- <label>
-   <input type="text">
- </label>
-<label for="fullName">Full Name</label>
-<input id="fullName" type="text" name="name">
+.forms {
+  color: #415D43;
+  margin: auto;
+  z-index:2;
+}
+.shrink {
+  width:100%;
+}
 
-  </style>
+form input.button {
+  background: #000;
+  color: #fff;
+}
+#section1 {
+
+  .background-color: blue;
+}

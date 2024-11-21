@@ -58,8 +58,8 @@
     </header>
 -->
 
-    <section>
-    <div class="superContainer">
+<section>
+<div class="superContainer">
 	<div class="row"> 
 	  <div class="column">
 	    <img src="giorgio-trovato-WyxqQpyFNk8-unsplash.jpg" style="width:100%">
@@ -68,17 +68,61 @@
 	    <img src="traxer-kM6QNrgo0YE-unsplash.jpg" style="width:100%">
 	  </div>
 	  <div class="column">
-      <div class="forms">
-	      <form action="#">
-        <label for="userName">User Name
-	     	  <input type="text" name="userName" id="UserName" required />
-	      </label>
-	      <br>
-	      <label for="password">Password
-	   		  <input type="password" name="password" id="password" />
-  		  </label>
+    <section class="forms">
+      <table><caption>Boards</caption>
+      <thead>
+        <tr>
+       <th>Company</th>
+       <th colspan="2">Board Members</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+       <td>Theranos</td>
+       <td>Henry Kissinger</td>
+       <td>George Schulz</td>
+        </tr>
+        <tr>
+       <td>Ethereum</td>
+       <td>Board member 1</td>
+       <td>Board member 2</td>
+        </tr>
+      </tbody>
+      <!--
+      <tfoot>
+        <tr>
+       <td>&nbsp;</td>
+       <td>Company</td>
+       <td>Board Members</td>
+        </tr>
+      </tfoot>
+      -->
+     </table>
+    </section>
+<div class="forms">
+<form action="#" class="forms">
+  <label>Company:</label>
+  <select name="Company" class="forms">
+    <option value="Theranos">Theranos</option>
+    <option value="US Steel">US Steel</option>
+    <option value="Nvidia">Nvidia</option>
+    <option value="Ethereum" selected>Ethereum</option>
+  </select>
+
+  <input type="submit" class="forms">
+</form>
+</div>
+<!--
+	    <form action="#">
+          	  <label for="userName">User Name
+	          	<input type="text" name="userName" id="UserName" required />
+	         </label>
+	    <br>
+	         <label for="password">Password
+	       		<input type="password" name="password" id="password" />
+		</label>
 	    </form> 
-      </div>
+-->
 	    <img src="10619165_MotionElements_shadow-economy-50-euro-money-falls-in-the-ancien-vimage.gif" alt=""" style="width:100%">
 	  </div>
    
@@ -116,55 +160,6 @@
          </form> 
     </section>
 -->
-<!--
-    <section>
-      <table><caption>Phone numbers</caption>
-      <thead>
-        <tr>
-       <th>Name</th>
-       <th colspan="2">Phone</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-       <td>John</td>
-       <td>577854</td>
-       <td>577855</td>
-        </tr>
-        <tr>
-       <td>Jack</td>
-       <td>577856</td>
-       <td>577857</td>
-        </tr>
-      </tbody>
-      <tfoot>
-        <tr>
-       <td>&nbsp;</td>
-       <td>Personal</td>
-       <td>Office</td>
-        </tr>
-      </tfoot>
-     </table>
-    </section>
-<form action="#">
-  <label>Choose a car:</label>
-  <select name="cars">
-    <option value="volvo">Volvo</option>
-    <option value="saab">Saab</option>
-    <option value="fiat">Fiat</option>
-    <option value="audi" selected>Audi</option>
-  </select>
-
-  <input type="submit">
-</form>
--->
-
-</body>
-</html>
-
-</body>
-</html>
-
 
     <script src="app.js" async defer></script>
   </body>

@@ -30,12 +30,13 @@
     color: blue;
   }
   .superContainer {
-    border: solid #415D43;
+    border: solid limegreen;
     background-color:#A1CCA5;
     height: auto;
     margin: 3em;
     display: flex;
     justify-content: space-evenly;
+
   }
   .sideNav {
     border: solid #111D13;
@@ -197,7 +198,7 @@ a:hover {
   /* Create four equal columns that sits next to each other */
   .column {
     flex: 25%;
-    max-width: 25%;
+    max-width: auto;
     padding: 0 4px;
   }
   
@@ -262,6 +263,7 @@ form input.button {
   margin: auto;
   z-index:2;
   flex: contain;
+  border:solid red;
 }
 button[type="submit"] {
 	background-color: #A1D9DD !important;
